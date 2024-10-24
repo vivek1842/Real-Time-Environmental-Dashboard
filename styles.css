@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+section {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    section {
+        width: 70%;
+    }
+}
