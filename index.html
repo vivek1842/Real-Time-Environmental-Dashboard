@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-Time Environmental Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" />
 </head>
 <body>
-    
+    <div class="dashboard">
+        <header>
+            <h1>Real-Time Environmental Dashboard</h1>
+        </header>
+        
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <p id="weather-info">Loading weather data...</p>
+        </section>
+
+        <!-- Air Quality Section -->
+        <section id="air-quality">
+            <h2>Air Quality</h2>
+            <canvas id="airQualityChart"></canvas>
+        </section>
+
+        <!-- Energy Consumption Section -->
+        <section id="energy">
+            <h2>Energy Consumption</h2>
+            <canvas id="energyChart"></canvas>
+        </section>
+
+        <!-- Earthquake Map Section -->
+        <section id="earthquakes">
+            <h2>Recent Earthquakes</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+
+        <footer>
+            <p>Real-time data from various sources.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
